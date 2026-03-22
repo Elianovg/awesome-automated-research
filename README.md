@@ -13,7 +13,7 @@
 
 *39 projects · 8 categories · End-to-end AI scientists · Experiment loops · Research co-pilots · Skill packs · Paper tools · Benchmarks*
 
-[English](#) | [中文项目页](./data/projects.zh.md)
+[English](#) | [中文](./README.zh.md)
 
 </div>
 

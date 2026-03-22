@@ -11,7 +11,7 @@
 
 *端到端 AI Scientist · autoresearch 循环 · 工作台 · 技能包 · 论文工具 · 垂直科研 agent*
 
-[返回英文首页](../README.md) | [跳到分类阅读](#reading-guide) | [跳到全量矩阵](#full-matrix)
+[返回英文首页](../README.md) | [返回中文首页](../README.zh.md) | [跳到分类阅读](#reading-guide) | [跳到全量矩阵](#full-matrix)
 
 </div>
 
