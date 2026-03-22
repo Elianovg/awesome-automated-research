@@ -1,42 +1,59 @@
-# 项目总览
+<div align="center">
 
-[English Projects Page](./projects.md)
+# Awesome Automated Research 中文项目页
 
-本页基于 2026-03-20 的 35 个自动科研相关仓库快照整理。它不是单纯按 star 排名，而是更关注这些项目到底覆盖了多少科研流程、适合什么使用场景、属于哪一类生态。
+[![English README](https://img.shields.io/badge/English-README-111827?style=for-the-badge)](../README.md)
+[![GitHub Stars](https://img.shields.io/github/stars/MinhaoXiong/awesome-automated-research?style=for-the-badge&logo=github&color=gold)](https://github.com/MinhaoXiong/awesome-automated-research/stargazers)
+[![Projects](https://img.shields.io/badge/Projects-39-blue?style=for-the-badge)](https://github.com/MinhaoXiong/awesome-automated-research)
+[![Snapshot](https://img.shields.io/badge/Snapshot-2026--03--22-green?style=for-the-badge)](https://github.com/MinhaoXiong/awesome-automated-research)
 
-## 标签说明
+**把自动科研项目按使用方式、流程覆盖和生态位置重新排一遍，方便中文读者快速选型。**
 
-- `Surface`：项目主要以什么形式使用
-  - `CLI` 命令行
-  - `IDE Skill` Claude Code / Codex / OpenClaw / Cursor 一类 skill 或 agent 指令集
-  - `Web UI` 网页界面
-  - `MCP` 作为 MCP server 或 MCP 工具层
-  - `ChatOps` 通过 WhatsApp / Slack / Discord / Feishu 等聊天入口驱动
-  - `Workspace` 更像一个研究工作台 / Lab OS / AI IDE
-  - `Artifact` 更像证据仓库、论文产物仓库、结果仓库
-- `Pipe`：项目覆盖的科研流程阶段
-  - `I` 选题 / idea generation
-  - `L` 文献检索 / literature review
-  - `H` 假设形成 / hypothesis
-  - `E` 实验 / coding / execution
-  - `A` 分析 / evaluation
-  - `W` 写作 / paper writing
-  - `R` 评审 / critique / reviewer loop
-  - `V` 可视化 / figures / posters / dashboards
-  - `Ops` 运行时、调度、守护、恢复、长时运行支撑
-- `Autonomy`
-  - `Full` 高度自动化，可自主推进主流程
-  - `Semi` 半自动，通常仍需要人做导师、选题或审阅
-  - `Tool` 工具层 / 组件层，不是完整 scientist
-- `Family`
-  - `AI Scientist`：Sakana AI Scientist 系
-  - `Autoresearch`：Karpathy autoresearch 及其移植分支
-  - `Claw`：OpenClaw / ResearchClaw / DrClaw / CitationClaw 一类生态
-  - `Independent`：相对独立，不明显属于上述谱系
+*端到端 AI Scientist · autoresearch 循环 · 工作台 · 技能包 · 论文工具 · 垂直科研 agent*
 
+[返回英文首页](../README.md) | [跳到分类阅读](#reading-guide) | [跳到全量矩阵](#full-matrix)
+
+</div>
+
+---
+
+## 这页怎么用
+
+这页不是单纯按 star 排名，而是更关注三个问题：项目到底覆盖了多少科研流程、你实际会以什么方式使用它、它更像主系统还是工具层。
+
+| 如果你现在想看... | 直接跳这里 |
+| --- | --- |
+| 最像“idea 到 paper”闭环的系统 | [1. 最像“全自动科研”的端到端系统](#e2e-systems) |
+| 最像 Karpathy `autoresearch` 的循环 | [2. 最像“自动实验组织”的 autoresearch 循环](#autoresearch-loops) |
+| Scientist 背后的技能、工具和运行时 | [3. 技能层、工具层、运行时基础设施](#infra-stack) |
+| 医学、生物、Lab OS 方向项目 | [4. 医学、生物、实验室方向的垂直科研 agent / 工作台](#vertical-agents) |
+| 论文图示、引用分析、包装与评审 | [5. 输出层、评审层、论文包装层](#output-layer) |
+
+## 目录
+
+- [字段说明](#field-guide)
+- [全量矩阵](#full-matrix)
+- [分类阅读](#reading-guide)
+- [选型建议](#selection-tips)
+- [说明](#notes)
+
+<a id="field-guide"></a>
+## 字段说明
+
+| 字段 | 主要回答什么问题 | 取值速记 |
+| --- | --- | --- |
+| `类型` | 这是完整系统、工作台、技能包，还是工具层 | `端到端系统`、`实验循环`、`工作台`、`技能包`、`基础设施`、`垂直 agent`、`产出层`、`证据仓库` |
+| `使用方式` | 你主要通过什么入口使用它 | `CLI` 命令行；`IDE Skill` 技能包 / agent 指令集；`Web UI` 网页；`MCP` 工具层；`ChatOps` 聊天入口；`Workspace` 工作台；`Artifact` 结果仓库 |
+| `流程覆盖` | 它覆盖科研链条里的哪些环节 | `I` 选题；`L` 文献；`H` 假设；`E` 实验；`A` 分析；`W` 写作；`R` 评审；`V` 可视化；`Ops` 运行时 / 调度 / 恢复 |
+| `自动化` | 它更像自主 scientist，还是辅助工具 | `Full` 高度自动化；`Semi` 半自动；`Tool` 工具层 / 组件层 |
+| `生态` | 它跟哪条方法论或产品谱系更近 | `AI Scientist`、`Autoresearch`、`Claw`、`Independent` |
+
+> `Stars` 在 GitHub 上会持续变化，所以中文页更偏导览和选型，不是实时排行榜。
+
+<a id="full-matrix"></a>
 ## 全量矩阵
 
-| Repo | Stars | 类别 | Surface | Pipe | 领域 | 自动化 | 生态 | 为什么值得看 |
+| Repo | Stars | 类型 | 使用方式 | 流程覆盖 | 领域 | 自动化 | 生态 | 为什么值得看 |
 | --- | ---: | --- | --- | --- | --- | --- | --- | --- |
 | [SakanaAI/AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | 12463 | 端到端系统 | CLI | I/H/E/A/W/R | 通用 ML | Full | AI Scientist | 第一代最有代表性的端到端 AI Scientist 基线 |
 | [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 6908 | 端到端系统 | CLI / ChatOps | I/L/H/E/A/W/R/V | 通用 | Full | Claw | 目前最像“chat an idea, get a paper”的工程化开源实现 |
@@ -74,13 +91,15 @@
 | [drivelineresearch/autoresearch-claude-code](https://github.com/drivelineresearch/autoresearch-claude-code) | 161 | 实验循环 | IDE Skill | H/E/A | 通用 | Full | Autoresearch | `pi-autoresearch` 的 Claude Code 移植版 |
 | [olelehmann100kMRR/autoresearch-skill](https://github.com/olelehmann100kMRR/autoresearch-skill) | 278 | 实验循环 | IDE Skill | A | 通用 | Tool | Autoresearch | 更偏“用 autoresearch 优化 skill 本身”的 meta 用法 |
 
+<a id="reading-guide"></a>
 ## 分类阅读
 
-## 1. 最像“全自动科研”的端到端系统
+<a id="e2e-systems"></a>
+### 1. 最像“全自动科研”的端到端系统
 
 这类项目最接近大家脑海里“AI Scientist”的定义：从 idea、文献、实验到论文产出，覆盖的环节尽可能多。
 
-| Repo | Stars | Surface | Pipe | 为什么值得看 |
+| Repo | Stars | 使用方式 | 流程覆盖 | 为什么值得看 |
 | --- | ---: | --- | --- | --- |
 | [SakanaAI/AI-Scientist](https://github.com/SakanaAI/AI-Scientist) | 12463 | CLI | I/H/E/A/W/R | 第一代端到端 AI Scientist 的共识基线 |
 | [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 6908 | CLI / ChatOps | I/L/H/E/A/W/R/V | 当前最完整的开源 idea-to-paper 工程流水线之一 |
@@ -92,11 +111,12 @@
 | [eimenhmdt/autoresearcher](https://github.com/eimenhmdt/autoresearcher) | 419 | CLI | L/H/E/A/W | 仍偏早期，但方向完全对题 |
 | [SakanaAI/AI-Scientist-ICLR2025-Workshop-Experiment](https://github.com/SakanaAI/AI-Scientist-ICLR2025-Workshop-Experiment) | 286 | Artifact | W/R | 更像结果证据仓，而不是主框架 |
 
-## 2. 最像“自动实验组织”的 autoresearch 循环
+<a id="autoresearch-loops"></a>
+### 2. 最像“自动实验组织”的 autoresearch 循环
 
 这类项目不一定生成完整论文，但在“改代码 -> 跑实验 -> 比较指标 -> 保留/丢弃”这件事上非常强。
 
-| Repo | Stars | Surface | Pipe | 为什么值得看 |
+| Repo | Stars | 使用方式 | 流程覆盖 | 为什么值得看 |
 | --- | ---: | --- | --- | --- |
 | [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 44200 | CLI / IDE Skill | H/E/A | autoresearch 范式本身的定义者 |
 | [wanshuiyin/Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | 2688 | IDE Skill | I/L/H/E/A/W/R/V | 对 Claude Code 用户最实用的一套夜间研究 workflow |
@@ -107,11 +127,12 @@
 | [drivelineresearch/autoresearch-claude-code](https://github.com/drivelineresearch/autoresearch-claude-code) | 161 | IDE Skill | H/E/A | `pi-autoresearch` 的 Claude Code 版 |
 | [olelehmann100kMRR/autoresearch-skill](https://github.com/olelehmann100kMRR/autoresearch-skill) | 278 | IDE Skill | A | 更 meta，更像“优化 skill 输出质量”的 autoresearch |
 
-## 3. 技能层、工具层、运行时基础设施
+<a id="infra-stack"></a>
+### 3. 技能层、工具层、运行时基础设施
 
 这类项目不是完整 scientist，但没有它们，很多 scientist 系统就跑不起来或者跑不稳。
 
-| Repo | Stars | Surface | Pipe | 为什么值得看 |
+| Repo | Stars | 使用方式 | 流程覆盖 | 为什么值得看 |
 | --- | ---: | --- | --- | --- |
 | [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills) | 15600 | IDE Skill | L/E/A/W/V | 体量最大、复用价值最高的科研技能底座之一 |
 | [mims-harvard/ToolUniverse](https://github.com/mims-harvard/ToolUniverse) | 1138 | Python / MCP | L/E/A | AI scientist 的工具中台 |
@@ -120,11 +141,12 @@
 | [waltstephen/ArgusBot](https://github.com/waltstephen/ArgusBot) | 237 | CLI | Ops | 24/7 守夜人，适合 autoresearch 长循环 |
 | [dualverse-ai/station](https://github.com/dualverse-ai/station) | 111 | Workspace | I/H/E/Ops | 更像一个让 agent 自主演化的科学环境 |
 
-## 4. 医学、生物、实验室方向的垂直科研 agent / 工作台
+<a id="vertical-agents"></a>
+### 4. 医学、生物、实验室方向的垂直科研 agent / 工作台
 
 如果你更关心医学、生物、LabOS，这一组往往比通用 scientist 更贴近真实使用场景。
 
-| Repo | Stars | Surface | Pipe | 为什么值得看 |
+| Repo | Stars | 使用方式 | 流程覆盖 | 为什么值得看 |
 | --- | ---: | --- | --- | --- |
 | [xjtulyc/MedgeClaw](https://github.com/xjtulyc/MedgeClaw) | 915 | ChatOps / Web UI | L/E/A/V | 生物医药方向产品化程度很高 |
 | [wu-yc/LabClaw](https://github.com/wu-yc/LabClaw) | 801 | IDE Skill / ChatOps | L/E/A/V | Lab OS / 干湿实验桥接的技能层 |
@@ -135,17 +157,19 @@
 | [InternScience/DrClaw](https://github.com/InternScience/DrClaw) | 109 | Workspace | I/L/E/A/W/Ops | 愿景很对，但目前更早期 |
 | [FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | 1456 | IDE Skill | L/E/A | 医疗和基因组方向的重要技能底座 |
 
-## 5. 输出层、评审层、论文包装层
+<a id="output-layer"></a>
+### 5. 输出层、评审层、论文包装层
 
 这类项目常常不是完整科研系统，但对“最后一公里”价值极高。
 
-| Repo | Stars | Surface | Pipe | 为什么值得看 |
+| Repo | Stars | 使用方式 | 流程覆盖 | 为什么值得看 |
 | --- | ---: | --- | --- | --- |
 | [dwzhu-pku/PaperBanana](https://github.com/dwzhu-pku/PaperBanana) | 5286 | CLI / Web UI | V | 学术图示自动化这条线最值得看的项目之一 |
 | [VisionXLab/CitationClaw](https://github.com/VisionXLab/CitationClaw) | 193 | Web UI / CLI | L/A/V | citation 影响分析和展示做得很明确 |
 | [guhaohao0991/PaperClaw](https://github.com/guhaohao0991/PaperClaw) | 163 | IDE Skill / Automation | L/R | 更适合做领域论文专家智能体 |
 | [ZhihaoAIRobotic/ClawPhD](https://github.com/ZhihaoAIRobotic/ClawPhD) | 136 | CLI / Artifact | V/W | 海报、图、网页、外部表达物这层很有用 |
 
+<a id="selection-tips"></a>
 ## 选型建议
 
 - 如果你只想先看“最像 AI Scientist”的仓库：先看 `AI-Scientist`、`AutoResearchClaw`、`AI-Scientist-v2`
@@ -154,6 +178,7 @@
 - 如果你关心医学 / 生物落地：先看 `MedgeClaw`、`LabClaw`、`BioClaw`、`OpenClaw-Medical-Skills`
 - 如果你想补论文产出最后一公里：先看 `PaperBanana`、`CitationClaw`、`ClawPhD`
 
+<a id="notes"></a>
 ## 说明
 
 - 这不是纯 star 排名。
