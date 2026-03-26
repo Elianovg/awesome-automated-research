@@ -5,13 +5,13 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/MinhaoXiong/awesome-automated-research?style=for-the-badge&logo=github&color=gold)](https://github.com/MinhaoXiong/awesome-automated-research/stargazers)
 [![GitHub Issues](https://img.shields.io/github/issues/MinhaoXiong/awesome-automated-research?style=for-the-badge&logo=github)](https://github.com/MinhaoXiong/awesome-automated-research/issues)
-[![Projects](https://img.shields.io/badge/Projects-40-blue?style=for-the-badge)](https://github.com/MinhaoXiong/awesome-automated-research)
+[![Projects](https://img.shields.io/badge/Projects-41-blue?style=for-the-badge)](https://github.com/MinhaoXiong/awesome-automated-research)
 [![Snapshot](https://img.shields.io/badge/Snapshot-2026--03--22-green?style=for-the-badge)](https://github.com/MinhaoXiong/awesome-automated-research)
 [![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
 
 **A curated list of autonomous research systems and tools.**
 
-*40 projects · 8 categories · End-to-end AI scientists · Experiment loops · Research co-pilots · Skill packs · Paper tools · Benchmarks*
+*41 projects · 8 categories · End-to-end AI scientists · Experiment loops · Research co-pilots · Skill packs · Paper tools · Benchmarks*
 
 [English](#) | [中文](./README.zh.md)
 
@@ -30,7 +30,7 @@ AI can now carry out research autonomously — from generating ideas and running
 | You write papers from scratch | AI generates camera-ready LaTeX drafts with figures |
 | You review your own blind spots | AI self-reviews, cross-checks, and iterates |
 
-> **40 projects** tracked as of 2026-03-22.
+> **41 projects** tracked as of 2026-03-22.
 
 ---
 
@@ -96,7 +96,7 @@ AI can now carry out research autonomously — from generating ideas and running
 
 | Category | Count | Representative Repos |
 | --- | ---: | --- |
-| End-to-End AI Scientists | 8 | AI-Scientist, AutoResearchClaw, InternAgent, NanoResearch |
+| End-to-End AI Scientists | 9 | AI-Scientist, AutoResearchClaw, InternAgent, NeuriCo |
 | Experiment Optimization Loops | 5 | autoresearch, pi-autoresearch, codex-autoresearch |
 | Research Co-pilots & Interactive Agents | 3 | EvoScientist, Amadeus, ScienceClaw |
 | Research Workspaces | 3 | dr-claw, Research-Claw, DrClaw |
@@ -125,6 +125,7 @@ Fully autonomous pipelines that carry the research loop from idea or literature 
 | [InternAgent](https://github.com/InternScience/InternAgent) | 1.2K | Unified long-horizon scientist framework that links deep research, executable verification, and memory-driven evolution across algorithm and empirical discovery | ![CLI][i-cli] ![Web][i-web] | ![GPT][gpt] ![DeepSeek][ds] ![InternS1][is1] | last 1 week |
 | [SibylSystem](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem) | 185 | Give it a topic, it runs 19 stages to produce a conference-style paper and self-improves across runs | ![CLI][i-cli] ![Skill][i-skill] ![Web][i-web] | ![Claude][cl] ![GPT][gpt] | last 1 week |
 | [NanoResearch](https://github.com/OpenRaiser/NanoResearch) | 160 | 9-stage pipeline that runs real GPU/SLURM experiments, analyzes results, and writes LaTeX papers with grounded evidence | ![CLI][i-cli] ![Skill][i-skill] ![ChatOps][i-chatops] | ![Claude][cl] ![GPT][gpt] ![DeepSeek][ds] ![Gemini][gem] | last 1 week |
+| [NeuriCo](https://github.com/ChicagoHAI/NeuriCo) | 40 | YAML-in autonomous research framework that reviews literature, runs experiments, writes LaTeX papers, and auto-pushes complete results to GitHub repos | ![CLI][i-cli] ![Skill][i-skill] | ![Claude][cl] ![Codex][cdx] ![Gemini][gem] | last 1 week |
 | [FARS](https://analemma.ai/) | — | Public Analemma deployment of a multi-agent system that runs ideation, planning, experiments, and short-paper writing at scale | ![Web][i-web] | ![Any][any] | last 1 month |
 | [Kosmos](https://github.com/jimmc414/Kosmos) | 471 | Autonomous discovery engine that tests hypotheses in sandboxed containers and tracks findings in a knowledge graph | ![CLI][i-cli] | ![Claude][cl] ![GPT][gpt] ![LiteLLM][ll] | last 3 month |
 
